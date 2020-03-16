@@ -52,13 +52,14 @@ header{
 /* Make the title and the icon to go to the left and the nav to the right */
 .menu-container{
   width: 90%;
-  display: -webkit-box;
+  display: -webkit-flexbox;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+          -webkit-flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -67,11 +68,12 @@ header{
 
 /* Left side of the menu */
 .colder_section {
-  display: -webkit-box;
+  display: -webkit-flexbox;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
+      -webkit-align-self: center;
   font-size: 1.5rem;
   color: #212F4F;
 }
@@ -256,15 +258,16 @@ header a.download:hover{
   border-radius: 2px;
 }
 
-/* The container where the three tabs with the informatios are located */
+/* The container where the three tabs with the informations are located */
 #info .inf{
-  display: -webkit-box;
+  display: -webkit-flexbox;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+          -webkit-flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
