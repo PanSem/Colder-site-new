@@ -1,0 +1,852 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+
+/* Part where changes consider the whole page */
+
+/* Styles for all the body */
+body{
+  margin: 0;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  background: #F3F6F9;
+}
+
+.container{
+  margin: auto;
+}
+
+ul{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+hr{
+  width: 100px;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*Header*/
+
+/* General styling of the header */
+header{
+  background: #F3F6F9;
+  color: #373F45;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.header-container{
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  padding-left: 1rem;
+}
+
+/* Menu of the page */
+
+/* Make the title and the icon to go to the left and the nav to the right */
+.menu-container{
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+/* Left side of the menu */
+.colder_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1.5rem;
+  color: #212F4F;
+}
+
+/* Adjust the colder svg icon and make it rotate with animation */
+header svg{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+
+.colder_section svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.2rem;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: rotatec;
+          animation-name: rotatec;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rotatec {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotatec {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* Adjust the image of the program */
+img.colder-image{
+  float: right;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Side of the menu */
+header ul li{
+  display: inline;
+  float: left;
+  padding: 0.7rem;
+  padding-left: 4rem;
+  color: #373F45;
+}
+
+header ul li a:hover{
+  cursor: pointer;
+}
+
+header ul li a.first_section::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #e94646;
+    -webkit-transition: width .3s;
+    -o-transition: width .3s;
+    transition: width .3s;
+}
+
+header ul li a.first_section:hover::after {
+    width: 100%;
+}
+
+header ul li a.second_section::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #5acc5a;
+    -webkit-transition: width .3s;
+    -o-transition: width .3s;
+    transition: width .3s;
+}
+
+header ul li a.second_section:hover::after {
+    width: 100%;
+}
+
+header ul li a.third_section::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #212f4f;
+    -webkit-transition: width .3s;
+    -o-transition: width .3s;
+    transition: width .3s;
+}
+
+header ul li a.third_section:hover::after {
+    width: 100%;
+}
+
+/*Title h1, sub p and image of the program*/
+header h1{
+  font-size: 2rem;
+  margin: 0px;
+  color: #212F4F;
+  padding-top: 4rem;
+}
+
+header p.subt{
+  color: #373F45;
+  font-size: 1.2rem;
+  width: 50%;
+  margin-top: 0px;
+}
+
+/* Download Now button */
+header a{
+  text-decoration: none;
+  color: #212F4F;
+  font-size: 1.2rem;
+}
+
+header a.download{
+  display: block;
+  width: 150px;
+  padding: 0.7rem;
+  border: 1px solid #212F4F;
+  color: #ffffff;
+  background: #212F4F;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 100px;
+}
+
+header a.download:hover{
+  border: 1px solid #18223a;
+  background: #18223a;
+}
+
+/* Info */
+
+/* General styling of the info */
+#info{
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  overflow:hidden;
+  min-height: 500px;
+  margin: auto;
+  background: #F3F6F9;
+  position: relative;
+}
+
+#info .container-info{
+  width: 80%;
+  margin: auto;
+}
+
+/* General styling of the h2 */
+#info h2{
+  text-align: center;
+  font-size: 2rem;
+  color: #212F4F;
+}
+
+/* Styling the line under the h2 */
+.hr-info {
+  width: 100px;
+  border: 2px solid #E94646;
+  border-radius: 2px;
+}
+
+/* The container where the three tabs with the informatios are located */
+#info .inf{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* All-info */
+
+/* Styling of the class of all the information tabs */
+#info .all-info{
+  position: relative;
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding-top: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 3rem;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-left: 2rem;
+  max-height: 330px;
+  margin-top: 5rem;
+  background: #ffffff;
+  z-index: 10;
+}
+
+/* General styling of the h3 of all the information tabs */
+#info .all-info h3{
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  margin-top: 2rem;
+  color: #212F4F;
+}
+
+/* General styling of the font awesome elements of all the information tabs */
+#info .all-info .fas{
+  font-size: 2rem;
+}
+
+#info .all-info.find{
+  margin-left: 0px;
+}
+
+#info .all-info .fa-palette{
+  position: absolute;
+  color: #ec3232;
+  left: 50%;
+  margin-left: -30px;
+  top: -30px;
+  background: #E94646;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 2.2;
+}
+
+#info .all-info .fa-hashtag{
+  position: absolute;
+  color: #ec3232;
+  left: 50%;
+  margin-left: -30px;
+  top: -30px;
+  background: #E94646;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 2.2;
+}
+
+#info .all-info .fa-file{
+  position: absolute;
+  color: #ec3232;
+  left: 50%;
+  margin-left: -30px;
+  top: -30px;
+  background: #E94646;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 2.2;
+}
+
+/* General styling of the paragraphs of all the information tabs */
+#info .all-info p{
+  font-size: 1rem;
+  width: 80%;
+  margin: auto;
+  color: #373F45;
+}
+
+/* Source */
+
+/* General styling of the source */
+#source{
+  position: relative;
+  padding-top: 3rem;
+  overflow: hidden;
+  padding-bottom: 1rem;
+  background: #F3F6F9;
+  color: #373F45;
+  min-height: 500px;
+}
+
+#source .container-source{
+  width: 70%;
+}
+
+#source .container-source h2{
+  text-align: center;
+  font-size: 2rem;
+  color: #212F4F;
+}
+
+/* Styling the line under the h2 */
+.hr-source {
+  width: 100px;
+  border: 2px solid #5ACC5A;
+  border-radius: 2px;
+  margin-top: -10px;
+  margin-bottom: 2rem;
+}
+
+/* Styling og the paragraph of the source */
+#source .container-source p{
+  padding-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+/* Styling of the link of the paragraph of the source */
+#source p a{
+  text-decoration: none;
+  color: #4949bd;
+}
+
+/* Get it Now button */
+#source .container-source .source-btn{
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  padding: 0.7rem;
+  border: 1px solid #5ACC5A;
+  color: #ffffff;
+  background: #5ACC5A;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 3rem;
+  border-radius: 100px;
+}
+
+#source .container-source .source-btn:hover{
+  border: 1px solid #4fb14f;
+  background: #4fb14f;
+}
+
+/* General styling of the font awesome element of the source */
+#source .container-source .fa-github-square{
+  font-size: 12rem;
+  float: left;
+  padding-right: 2rem;
+  color: #5ACC5A;
+  -webkit-animation: fl 6s ease-in-out infinite;
+          animation: fl 6s ease-in-out infinite;
+}
+
+/* Documentation */
+
+/* General styling of the documentation */
+#documentation{
+  position: relative;
+  padding-top: 3rem;
+  overflow: hidden;
+  padding-bottom: 5rem;
+  background: #212F4F;
+  min-height: 550px;
+  margin: auto;
+}
+
+#documentation .container-documentation{
+  width: 80%;
+  margin: auto;
+}
+
+#documentation .container-documentation h2{
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  padding-top: 5rem;
+}
+
+/* Styling the line under the h2 */
+.hr-docs {
+  width: 100px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  margin-top: -10px;
+  margin-bottom: 2rem;
+}
+
+/*Make the slash effect of the documentation */
+#documentation::after{
+  content: " ";
+  width: 120%;
+  left: -10%;
+  height: 150px;
+  background: #ffffff;
+  position: absolute;
+  bottom: -70px;
+  transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  background: #F3F6F9;
+}
+
+#documentation::before{
+  content: " ";
+  width: 120%;
+  left: -10%;
+  height: 150px;
+  background: #ffffff;
+  position: absolute;
+  top: -70px;
+  transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  background: #F3F6F9;
+}
+
+#documentation .container-documentation .doc{
+  width: 33%;
+  float: left;
+  text-align: center;
+  padding-top: 3rem;
+  margin: auto;
+}
+
+/* General styling of the h3 of all the information tabs */
+#documentation .container-documentation h3{
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+/* General styling of the font awesome elements of all the docs */
+#documentation .container-documentation h3 .fas,.fab{
+  font-size: 1rem;
+}
+
+#documentation .container-documentation .fa-windows{
+  color: #ffffff;
+}
+
+#documentation .container-documentation .fa-book{
+  color: #ffffff;
+}
+
+/* General styling of the paragraphs of all the docs */
+#documentation .container-documentation p{
+  font-size: 1rem;
+  width: 80%;
+  margin: auto;
+  color: #ffffff;
+}
+
+/* Styling of the link of the paragraph of the docs */
+#documentation .container-documentation p a{
+  text-decoration: none;
+  color: #4949bd;
+}
+
+/* Footer */
+.cr {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  z-index: 10;
+}
+
+/* Make the circles of the info section */
+.circle-1 {
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  background-color: rgba(236, 50, 50, 0.35);
+  top: 10vw;
+  right: 10vw;
+  -webkit-animation: fl 6s ease-in-out infinite;
+          animation: fl 6s ease-in-out infinite;
+}
+
+.circle-2 {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  background-color: rgba(236, 50, 50, 0.35);
+  top: 15vw;
+  left: 5vw;
+  -webkit-animation: fl 6s ease-in-out infinite;
+          animation: fl 6s ease-in-out infinite;
+}
+
+.circle-3 {
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  background-color: rgba(236, 50, 50, 0.35);
+  border-radius: 50%;
+  top: 30vw;
+  left: 7vw;
+  -webkit-animation: fl 6s ease-in-out infinite;
+          animation: fl 6s ease-in-out infinite;
+}
+
+.circle-4 {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  background-color: rgba(236, 50, 50, 0.35);
+  border-radius: 50%;
+  top: 30vw;
+  right: 7vw;
+  -webkit-animation: fl 6s ease-in-out infinite;
+          animation: fl 6s ease-in-out infinite;
+}
+
+/* Make the squares of the source section */
+.square-1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(90, 204, 90, 0.35);
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  top: 5vw;
+  left: 30vw;
+  border-radius: 10px;
+  -webkit-animation: fl 6s ease-in-out infinite;
+          animation: fl 6s ease-in-out infinite;
+}
+
+.square-2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(90, 204, 90, 0.35);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 5vw;
+  right: 5vw;
+  border-radius: 10px;
+  -webkit-animation: fl 6s ease-in-out infinite;
+          animation: fl 6s ease-in-out infinite;
+}
+
+.square-3 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgba(90, 204, 90, 0.35);
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  top: 25vw;
+  right: 20vw;
+  border-radius: 10px;
+  -webkit-animation: fl 6s ease-in-out infinite;
+          animation: fl 6s ease-in-out infinite;
+}
+
+.square-4 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(90, 204, 90, 0.35);
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  top: 30vw;
+  right: 15vw;
+  border-radius: 5px;
+  -webkit-animation: fl 6s ease-in-out infinite;
+          animation: fl 6s ease-in-out infinite;
+}
+
+.square-5 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: rgba(90, 204, 90, 0.35);
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  top: 30vw;
+  left: 30vw;
+  border-radius: 10px;
+  -webkit-animation: fl 6s ease-in-out infinite;
+          animation: fl 6s ease-in-out infinite;
+}
+
+@-webkit-keyframes fl {
+  0% {
+		-webkit-transform: translatey(0px);
+		        transform: translatey(0px);
+	}
+	50% {
+		-webkit-transform: translatey(-20px);
+		        transform: translatey(-20px);
+	}
+	100% {
+		-webkit-transform: translatey(0px);
+		        transform: translatey(0px);
+	}
+}
+
+/* Animation for the circles and the squares */
+@keyframes fl {
+  0% {
+		-webkit-transform: translatey(0px);
+		        transform: translatey(0px);
+	}
+	50% {
+		-webkit-transform: translatey(-20px);
+		        transform: translatey(-20px);
+	}
+	100% {
+		-webkit-transform: translatey(0px);
+		        transform: translatey(0px);
+	}
+}
+
+/* Get displayed when the size is smaller than px instead of the program's image */
+.svg-im{
+  display: none;
+}
+
+/* Adjust styling for specific screens */
+@media(max-width:1024px){
+
+ .square-5 {
+    display: none;
+  }
+
+}
+
+@media(max-width:900px){
+  #info .all-info{
+    width: 100%;
+    float: none;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    margin-left: 0px;
+  }
+
+  .menu-container{
+    display: none;
+  }
+
+  #info .all-info .fa-palette{
+    left: unset;
+    top: -35px;
+  }
+
+  #info .all-info .fa-hashtag{
+    left: unset;
+    top: -35px;
+  }
+
+  #info .all-info .fa-file{
+    left: unset;
+    top: -35px;
+  }
+
+  #source{
+    padding-bottom: 0.5rem;
+  }
+
+  #documentation .container-documentation .doc{
+    width: 100%;
+    float: none;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  #documentation .container-documentation .doc.email{
+    width: 100%;
+    float: none;
+    padding-top: 0.5rem;
+    padding-bottom: 5rem;
+  }
+
+  #documentation{
+    padding-bottom: 2rem;
+  }
+
+  #info, #source, #documentation{
+    padding-top: 2rem;
+  }
+
+  header .header-container {
+    padding-left: 0px;
+  }
+}
+
+@media(max-width:800px){
+  header p.subt {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  header{
+    min-height: 0;
+  }
+
+  header h1{
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .header-container{
+    padding-bottom: 1rem;
+  }
+
+  header a.download{
+    margin: 0 auto;
+  }
+
+  #info .all-info{
+    margin: auto;
+    margin-top: 5rem;
+  }
+
+  #source .container-source .fa-github-square{
+    padding-right: 1rem;
+  }
+
+  img.colder-image{
+    display: none;
+  }
+
+  .svg-im{
+    display: block;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-name: rotatec;
+            animation-name: rotatec;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+
+  #documentation .cr {
+    font-size: 0.5rem;
+  }
+
+  .square-1, .square-2, .square-3, .square-4, .square-5 {
+    display: none;
+  }
+
+  .circle-1, .circle-2, .circle-3, .circle-4 {
+    display: none;
+  }
+}
+
+@media(max-width:350px){
+  #source .container-source .fa-github-square{
+    padding-right: 0;
+  }
+}
