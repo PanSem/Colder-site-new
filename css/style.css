@@ -524,10 +524,17 @@ header a.download:hover{
 
 #documentation .container-documentation .fa-windows{
   color: #ffffff;
+  font-size: 2rem;
 }
 
 #documentation .container-documentation .fa-book{
   color: #ffffff;
+  font-size: 2rem;
+}
+
+#documentation .container-documentation .fa-envelope{
+  color: #ffffff;
+  font-size: 2rem;
 }
 
 /* General styling of the paragraphs of all the docs */
